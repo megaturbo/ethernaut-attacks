@@ -1,0 +1,5 @@
+contract Ownable {
+  function Ownable() {
+    
+  }
+}
