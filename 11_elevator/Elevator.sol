@@ -24,6 +24,9 @@ contract Elevator {
 // solc@0.4.18 doesn't enforce a view function to not modify state.
 // so first time it's called soupe is true, and then it'll be false, hence
 // we'll be at the top
+//
+// note: do not call goTo in the constructor because the contract code won't
+// be deployed yet
 contract Attack is Building {
 
     bool soupe = true;
